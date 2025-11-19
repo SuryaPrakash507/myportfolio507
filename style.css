@@ -1,33 +1,93 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #f4f4f4;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-  background: #222;
+body {
+  background: #0d0d0d;
   color: #fff;
-  padding: 30px;
-  text-align: center;
 }
 
-section {
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
-  margin: 15px;
-  background: #fff;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #02121d, #001f2e);
+}
+
+.hero h1 span {
+  color: #00eaff;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00eaff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+.card {
+  background: #111;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skills-grid span {
+  background: #00eaff33;
+  padding: 12px;
+  text-align: center;
   border-radius: 8px;
 }
 
-h2 {
-  color: #222;
-}
-
-ul {
-  line-height: 1.8;
-}
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  background: #222;
-  color: #fff;
+  padding: 20px;
+  background: #111;
+  margin-top: 30px;
 }
